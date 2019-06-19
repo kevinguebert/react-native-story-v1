@@ -74,6 +74,7 @@ export default class Stories extends PureComponent {
   }
 
   _handleSelectedStoryOnLoaded = () => {
+    console.log("here");
     this.setState({ ready: true });
   };
 

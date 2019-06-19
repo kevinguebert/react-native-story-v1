@@ -51,7 +51,7 @@ class StoryListItemView extends Component {
         >
           <Image
             style={styles.avatar}
-            source={item.avatar}
+            source={{ uri: item.avatar }}
             defaultSource={DEFAULT_AVATAR}
           />
         </TouchableOpacity>

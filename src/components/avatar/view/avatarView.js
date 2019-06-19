@@ -12,7 +12,7 @@ export default class Avatar extends React.PureComponent {
       <SafeAreaView style={{ flex: 1 }}>
         <View style={styles.container}>
           <Image
-            source={source}
+            source={{ uri: source }}
             defaultSource={DEFAULT_AVATAR}
             style={styles.avatar}
           />

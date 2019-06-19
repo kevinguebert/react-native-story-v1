@@ -3,7 +3,7 @@ import { Dimensions } from "react-native";
 
 export default StyleSheet.create({
   storyListContainer: {
-    marginTop: 50
+    marginTop: 40
   },
   modal: {
     height: Dimensions.get("window").height,

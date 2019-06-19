@@ -18,13 +18,13 @@ export default class extends PureComponent {
       <Fragment>
         <View style={styles.container}>
           <Image
-            onLoad={() =>
-              selectedStory &&
-              selectedStory.id === id &&
-              handleSelectedStoryOnLoaded()
-            }
+            onLoad={() => {
+              if (selectedStory && selectedStory.id === id) {
+                handleSelectedStoryOnLoaded();
+              }
+            }}
             style={styles.image}
-            {...{ source }}
+            source={{ uri: source }}
           />
           <Avatar {...{ user, avatar }} />
         </View>
